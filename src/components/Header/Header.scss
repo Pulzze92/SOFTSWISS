@@ -17,6 +17,7 @@
 
     @media (max-width: 1248px) {
       padding: 30px 40px;
+      max-width: 100%;
     }
 
     @media (max-width: 768px) {
@@ -34,6 +35,10 @@
       img {
         width: auto;
         height: 24px;
+      }
+
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -96,10 +101,23 @@
 
     &-item {
       width: auto;
+      transition: color 0.3s ease;
       
+      &:hover {
+        color: $pink;
+      }
+
+      &.active {
+        color: $pink;
+      }
+
       img {
         width: 24px;
         height: 24px;
+        
+        &:hover {
+          filter: invert(55%) sepia(44%) saturate(7482%) hue-rotate(299deg) brightness(101%) contrast(101%);
+        }
       }
     }
     

@@ -5,10 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: $white;
   font-weight: 700;
-  width: 100%;
-    overflow-x: hidden;
 }
 
 a {
@@ -19,6 +16,8 @@ a {
 .app {
   min-height: 100vh;
   font-family: $font;
+  color: $white;
+  overflow-x: hidden;
 }
 
 .container {

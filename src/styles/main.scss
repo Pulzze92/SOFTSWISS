@@ -1,3 +1,7 @@
 @import 'variables';
 @import 'mixins';
 @import 'reset';
+
+html {
+  scroll-behavior: smooth;
+}

@@ -52,6 +52,6 @@ npm start
 ---
 
 ## 🌍 **Deployment**  
-The project is deployed on **GitHub Pages**: [🔗 ](#)  
+The project is deployed on **GitHub Pages**: [🔗 https://pulzze92.github.io/SOFTSWISS](#)  
 
 ---
