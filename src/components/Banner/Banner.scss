@@ -1,50 +1,82 @@
-.hero {
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.banner {
+  width: 100%;
   min-height: 100vh;
-  background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop') center/cover no-repeat,
-              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
-  background-blend-mode: overlay;
+  background: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(15, 20, 32, 0.79) 79%),
+    url('../../assets/images/backgrounds/banner_bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
-  
+  text-align: center;
+
+  @media (max-width: 460px) {
+    background-size: auto 100%;
+    background-position: center top;
+  }
+
   &__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+    @include container;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 32px;
+      padding: 80px 20px;
+    }
+  }
+
+  &__content {
+    &-left {
+      text-align: left;
+    }
+
+    &-right {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 
   &__title {
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 20px;
-    
-    @media (max-width: 768px) {
-      font-size: 32px;
+    font-size: 72px;
+    margin-bottom: 16px;
+
+    span {
+      color: $pink;
     }
   }
 
   &__subtitle {
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 40px;
-    
-    @media (max-width: 768px) {
-      font-size: 18px;
+    font-size: 32px;
+    margin-bottom: 32px;
+
+    span {
+      color: $lime;
     }
   }
 
   &__button {
-    padding: 15px 30px;
-    background: #00ff00;
+    padding: 14px 40px;
+    line-height: 26.4px;
+    background: $lime;
     border: none;
-    border-radius: 25px;
-    color: #000;
-    font-size: 18px;
+    border-radius: 32px;
+    font-size: 22px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    color: $black;
+    transition: background-color 0.3s ease;
 
     &:hover {
-      transform: scale(1.05);
+      background: darken($lime, 10%);
     }
   }
 } 

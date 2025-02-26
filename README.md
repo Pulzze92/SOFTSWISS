@@ -9,7 +9,6 @@ A **single-page application** for a **space travel agency**, developed based on 
 
 ## 🛠 **Technologies**  
 - ⚛ **React** (Create React App)  
-- 🟦 **TypeScript**  
 - 🎨 **SASS** (SCSS)  
 - 🌐 **HTML5**, **CSS3** (Flex/Grid)  
 - 🏗 **BEM methodology**  
