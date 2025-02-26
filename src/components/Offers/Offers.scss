@@ -1,0 +1,257 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.offers {
+  padding: 60px 0;
+  background: $blue;
+  position: relative;
+  z-index: 1;
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+    &-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: 35px;
+      margin-top: auto;
+    }
+
+    @include tablet {
+      &-content {
+        padding-top: 60px;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    }
+
+    &-title {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    &-subtitle {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    &-button {
+      padding: 14px 40px;
+      background: transparent;
+      border: 1px solid $lime;
+      border-radius: 32px;
+      font-size: 16px;
+      color: $lime;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      align-self: flex-start;
+
+      &:hover {
+        background: $lime;
+        color: $black;
+      }
+    }
+
+    &--wide {
+      grid-column: 1 / -1;
+      padding-right: 285px;
+
+      .offers__card-title {
+        font-size: 74px;
+      }
+
+      .offers__card-subtitle {
+        font-size: 26px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 35px;
+        
+        .offers__card-title {
+          font-size: 46px;
+          padding-right: 0;
+        }
+
+        .offers__card-subtitle {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  &__info {
+    margin: 0 auto;
+
+    &-title {
+      font-size: 24px;
+      margin-bottom: 17px;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 17px;
+      opacity: 0.6;
+    }
+
+    &-button {
+      color: $lime;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 24px;
+      transition: opacity 0.3s ease;
+
+      @include tablet {
+        font-size: 16px;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 40px 0;
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    &__card {
+      min-height: 200px;
+      padding: 24px;
+      aspect-ratio: 1;
+
+      &--wide {
+        grid-column: auto;
+        padding: 24px;
+      }
+
+      &-title {
+        font-size: 32px;
+        padding-right: 0;
+      }
+
+      &-subtitle {
+        font-size: 18px;
+      }
+
+      &-button {
+        padding: 10px 24px;
+        font-size: 16px;
+      }
+    }
+
+    &__info {
+      &-title {
+        font-size: 24px;
+      }
+
+      &-text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &-button {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include tablet {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    &__card {
+      min-height: 320px;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+
+      &-content {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      &--wide {
+        grid-column: auto;
+        padding: 35px;
+
+        .offers__card-title {
+          font-size: 40px;
+
+          @media (max-width: 650px) {
+            font-size: 30px;
+          }
+        }
+
+        .offers__card-subtitle {
+          font-size: 16px;
+        }
+      }
+
+      &-title {
+        font-size: 40px;
+        margin-bottom: 0;
+
+        @media (max-width: 650px) {
+          font-size: 30px;
+        }
+      }
+
+      &-subtitle {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+
+      &-button {
+        font-size: 16px;
+      }
+    }
+  }
+} 
