@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SOFTSWISS/static/css/main.e48dbecb.css",
+    "main.js": "/SOFTSWISS/static/js/main.074b467a.js",
+    "static/media/banner_bg.png": "/SOFTSWISS/static/media/banner_bg.74867f57913bb6fbb285.png",
+    "static/media/fantastic_dreams.png": "/SOFTSWISS/static/media/fantastic_dreams.586bf19dab0eb2bd2d40.png",
+    "static/media/dream_of_stars.png": "/SOFTSWISS/static/media/dream_of_stars.1e80f4985ba75591d88a.png",
+    "static/media/reality_borders.png": "/SOFTSWISS/static/media/reality_borders.d991a8494310911dea91.png",
+    "static/media/rocket.svg": "/SOFTSWISS/static/media/rocket.bf2dbb7c0c33ada062ba83af3725edbe.svg",
+    "static/media/stars_and_planets.png": "/SOFTSWISS/static/media/stars_and_planets.c963fa018a173298be89.png",
+    "static/media/banner_earth.png": "/SOFTSWISS/static/media/banner_earth.6e81de2e5e3b01054cc9.png",
+    "static/media/brand_name.svg": "/SOFTSWISS/static/media/brand_name.6280a3954ecb02c0bf67dc9125f93945.svg",
+    "static/media/logo.svg": "/SOFTSWISS/static/media/logo.0381c7e4a5fadc2c710e05053713bb30.svg",
+    "static/media/cart.svg": "/SOFTSWISS/static/media/cart.b697889a2021dbe00a30dd5ff69f0034.svg",
+    "index.html": "/SOFTSWISS/index.html",
+    "main.e48dbecb.css.map": "/SOFTSWISS/static/css/main.e48dbecb.css.map",
+    "main.074b467a.js.map": "/SOFTSWISS/static/js/main.074b467a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e48dbecb.css",
+    "static/js/main.074b467a.js"
+  ]
+}
